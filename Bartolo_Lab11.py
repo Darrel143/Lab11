@@ -11,7 +11,7 @@ while True:
     else:
         print("Invalid input. Please enter a numeric value.")
 
-matching_words = [word for word in words if len(word) == length]
+matching_words = [word for word in words if len(word) >= length]
 
 if matching_words:
     print("Words with the specified length:", ', '.join(matching_words))
